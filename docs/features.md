@@ -8,7 +8,7 @@ title: Features
 <div class="features-grid">
   {% for feature in site.data.features_general %}
   <div class="feature-item">
-    <img src="{{ feature.image }}" alt="{{ feature.title }} Image">
+    <img src="{{ site.baseurl }}/{{ feature.image }}" alt="{{ feature.title }} Image">
     <h3>{{ feature.title }}</h3>
     <ul>
       {% for item in feature.description %}
@@ -24,7 +24,7 @@ title: Features
 <div class="features-grid">
   {% for feature in site.data.features_slicer %}
   <div class="feature-item">
-    <img src="{{ feature.image }}" alt="{{ feature.title }} Image">
+    <img src="{{ site.baseurl }}/{{ feature.image }}" alt="{{ feature.title }} Image">
     <h3>{{ feature.title }}</h3>
     <ul>
       {% for item in feature.description %}
